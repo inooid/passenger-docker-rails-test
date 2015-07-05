@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   host: db
   username: postgres
-  password: 
+  password:
   pool: 5
 
 development:
@@ -84,5 +84,3 @@ test:
 production:
   <<: *default
   database: passenger-rails_production
-  username: passenger-rails
-  password: <%= ENV['PASSENGER-RAILS_DATABASE_PASSWORD'] %>
